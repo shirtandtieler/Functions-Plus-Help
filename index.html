@@ -1949,7 +1949,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
 </div>
 
-<h3 data-anchor-id="jdq3" id="string.endswith"> string.endswith(input, ends) </h3><pre data-anchor-id="lx7w"><code>Similar to string.startswith, but checks at the end of the string
+<h3 data-anchor-id="jdq3" id="string.endswith"> string.endswith(input, ends) </h3><pre data-anchor-id="lx7w"><code>A check to see if a string ends with a certain string
 </code></pre><p data-anchor-id="grpf"><code>Parameters</code></p><table data-anchor-id="kqnw" class="table table-striped-white table-bordered">
 <thead>
 <tr>
@@ -1961,9 +1961,16 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <tbody>
 
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+	 <td>input</td>
+	 <td style="text-align:center;">String</td>
+	 <td>The string to check </td>
+	</tr>
+	<tr>
+
+	<tr>
+	 <td>ends</td>
+	 <td style="text-align:center;">String</td>
+	 <td>The possible sub-string</td>
 	</tr>
 	<tr>
 
@@ -1976,11 +1983,49 @@ specified format.<br>If you want it to go back to the default settings, run the 
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+	 <td style="text-align:center;">Boolean</td>
+	 <td>'true' if &#60;input&#62; ends with &#60;ends&#62;, otherwise 'false'</td>
 	</tr>
 </tbody></table>
-<p data-anchor-id="a5pi"><code>Example(s)</code></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="grcy"><ol class="linenums"><li class="L0"><code class="language-lua"></code></li></ol></pre><div class="md-section-divider"></div>
+<p data-anchor-id="a5pi"><code>Example(s)</code></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="grcy"><ol class="linenums"><li class="L0"><code class="language-lua">diss = "You are so dumb that your dog teaches you tricks."</code></li><li class="L1"><code class="language-lua">if string.endswith(diss, "Yo mama") then</code></li><li class="L2"><code class="language-lua">  log("You just got schooled by a yo-mama diss!")</code></li><li class="L3"><code class="language-lua">elseif diss:endswith("You") then</code></li><li class="L4"><code class="language-lua">  log("You just got schooled with a diss on you!")</code></li><li class="L5"><code class="language-lua">  -- this is what gets logged</code></li><li class="L6"><code class="language-lua">else</code></li><li class="L7"><code class="language-lua">  log("Some other diss was made")</code></li><li class="L8"><code class="language-lua">end</code></li><li class="L9"><code class="language-lua"></code></li></ol></pre><div class="md-section-divider"></div>
+
+<div class="topImg">
+	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
+	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
+</div>
+
+<h3 data-anchor-id="jdq3" id="string.trim"> string.trim(input) </h3><pre data-anchor-id="lx7w"><code>Removes any whitespace around of a string
+</code></pre><p data-anchor-id="grpf"><code>Parameters</code></p><table data-anchor-id="kqnw" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>Parameter</th>
+ <th style="text-align:center;">Type</th>
+ <th>Description</th>
+</tr>
+</thead>
+<tbody>
+
+	<tr>
+	 <td>input</td>
+	 <td style="text-align:center;">String</td>
+	 <td>The string will possible whitespace at the start or end</td>
+	</tr>
+	<tr>
+
+</tbody></table><p data-anchor-id="8a1h"><code>Return values</code></p><table data-anchor-id="pq50" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:center;">Type</th>
+ <th>Description</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+	 <td style="text-align:center;">String</td>
+	 <td>A fixed version of the string without the leading/trailing whitespace</td>
+	</tr>
+</tbody></table>
+<p data-anchor-id="a5pi"><code>Example(s)</code></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="grcy"><ol class="linenums"><li class="L0"><code class="language-lua">code = "    if x then y"</code></li><li class="L1"><code class="language-lua">trimmedCode = string.trim(code)</code></li><li class="L2"><code class="language-lua">-- trimmedCode == "if x then y"</code></li><li class="L3"><code class="language-lua"></code></li><li class="L4"><code class="language-lua">title = " [    HELLO    ] "</code></li><li class="L5"><code class="language-lua">trimmedTitle = title:trim()</code></li><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li><li class="L7"><code class="language-lua"></code></li></ol></pre><div class="md-section-divider"></div>
 
 <div class="topImg">
 	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
@@ -2230,7 +2275,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 </tbody></table>
 <p data-anchor-id="a5pi"><code>Example(s)</code></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="grcy"><ol class="linenums"><li class="L0"><code class="language-lua">code = "    if x then y"</code></li><li class="L1"><code class="language-lua">trimmedCode = string.trim(code)</code></li><li class="L2"><code class="language-lua">-- trimmedCode == "if x then y"</code></li><li class="L3"><code class="language-lua"></code></li><li class="L4"><code class="language-lua">title = " [    HELLO    ] "</code></li><li class="L5"><code class="language-lua">trimmedTitle = title:trim()</code></li><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li><li class="L7"><code class="language-lua"></code></li></ol></pre><div class="md-section-divider"></div>
 <br><br>
-<h3 id="clrOptions"><u> FAQs </u></h3>
+<div class="topImg">
+	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
+	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
+</div>
+<h3 id="clrOptions"><u> xToName Color Scheme Options </u></h3>
 <p>For the xToName functions, the second parameter allows for a "colorScheme". Of the 4 choices for schemes, pick the one which suits your needs the best. </p>
 <p>Below, I list a description of all 4 and your options for the "colorScheme" parameter.</p>
 <p>Note that, for each of the color schemes, each level builds upon the previous; in addition, colors #1 takes 3 from grayscale, #2 takes 9 from grayscale, and #3 takes the remaining 7 from grayscale.</p>
