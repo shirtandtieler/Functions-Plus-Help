@@ -254,3 +254,7 @@ li.nested:before
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
+
+#contentTable {
+	border-spacing: 8px;
+}
