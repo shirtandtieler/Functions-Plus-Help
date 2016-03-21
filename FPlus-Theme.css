@@ -210,7 +210,7 @@ li.nested:before
 }
 
 .onoffswitch {
-    position: relative; width: 150px; float=right;
+    width: 150px; float=right;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
