@@ -34,6 +34,7 @@ $(document).ready(function() {
 
 function sortdiv(element) {
 	if (!element.checked) {
+		window.alert("Not checked");
 		var container = document.getElementById("toc");
 		var elements = container.childNodes;
 		var sortMe = [];
@@ -53,6 +54,7 @@ function sortdiv(element) {
 		    container.appendChild(sortMe[i][1]);
 		}
 	} else {
+		window.alert("checked");
 		var container = document.getElementById("toc");
 		var elements = container.childNodes;
 		var sortMe = [];
@@ -71,9 +73,9 @@ function sortdiv(element) {
 		for (var i=0; i<sortMe.length; i++) {
 		    container.appendChild(sortMe[i][0]);
 		}
-		}
 	}
-}
+};
+
 </script>
 </head>
 <body>
