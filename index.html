@@ -31,6 +31,11 @@ $(document).ready(function() {
         e.preventDefault();
     });
 });
+
+function switchPage() {
+	window.location='index_sortType.html';
+	return false;
+}
 </script>
 </head>
 <body>
@@ -59,7 +64,7 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 		</td>
 		<td>
 			<div class="onoffswitch">
-			    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sortMethod" checked>
+			    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sortMethod" onchange="return switchPage();" checked>
 			    <label class="onoffswitch-label" for="sortMethod">
 			        <span class="onoffswitch-inner"></span>
 			        <span class="onoffswitch-switch"></span>
