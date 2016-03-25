@@ -1,3 +1,239 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8">
+<title>Functions+ Help Document</title>
+<link href="FPlus-Theme.css" rel="stylesheet" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
+    });
+});
+function switchPage() {
+	window.location='index.html#top';
+	return false;
+}
+</script>
+</head>
+<body>
+<div id="wmd-preview" class="wmd-preview wmd-preview-full-reader"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="vmg4">Functions+ Help Document</h1><p data-anchor-id="63nq"><code>Requires latest version (v3.5.3+) - Made by /u/shirtandtieler</code></p>
+<pre data-anchor-id="pla5"><code>
+The idea for this script came to me almost a year ago - I wanted to create a way to seamlessly integrate custom 
+functions with AutoTouch. After <i>many</i> hours of hard work, I have created a whole spectrum of different 
+useful functions.
+
+Note that there's still much to be done within this help document. I still need to...
+	> Fix any awkward sounding sentences
+	> Colorize the examples
+	> Fill out the few functions that have missing info 
+		|-> some of the color-format-conversion family (hexToInt, rgbToHex, etc) 
+ 		|-> and some of boolean check functions (isStr, isTable, isNil, etc)
+
+Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
+</code></pre>
+
+<div class="md-section-divider"></div>
+
+<table id="contentTable">
+	<tr>
+		<td>
+			<h3 id="top"> Contents - Sort Method: </h3>
+		</td>
+		<td>
+			<div class="onoffswitch">
+			    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sortMethod">
+			    <label class="onoffswitch-label" for="sortMethod">
+			        <span class="onoffswitch-inner"></span>
+			        <span class="onoffswitch-switch"></span>
+			    </label>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<ol class="nested">
+	<li class="nested"><a href="#faqs"> FAQs </a></li>
+	<li class="nested"><a href="#funcAlpha"> Functions </a>
+	<ol class="nested">
+		<li class="nested">Checks / Logic
+			<ol class="nested">
+				<li class="nested"><a href="#getActiveApp">getActiveApp</a></li>
+				<li class="nested"><a href="#isBool">isBool</a></li>
+				<li class="nested"><a href="#isNil">isNil</a></li>
+				<li class="nested"><a href="#isNotNil">isNotNil</a></li>
+				<li class="nested"><a href="#isNum">isNum</a></li>
+				<li class="nested"><a href="#isStr">isStr</a></li>
+				<li class="nested"><a href="#isTable">isTable</a></li>
+				<li class="nested"><a href="#isin">isin</a></li>
+				<li class="nested"><a href="#isnotin">isnotin</a></li>
+				<li class="nested"><a href="#string.startswith">string.startswith</a></li>
+				<li class="nested"><a href="#string.endswith">string.endswith</a></li>
+				<li class="nested"><a href="#tblsEqual">tblsEqual</a></li>
+			</ol>
+		</li>
+		<li class="nested">Variable Modifiers
+			<ol class="nested">
+				<li class="nested"><a href="#join">join</a></li>
+				<li class="nested"><a href="#merge">merge</a></li>
+				<li class="nested"><a href="#string.format">string.format</a></li>
+				<li class="nested"><a href="#string.replace">string.replace</a></li>
+				<li class="nested"><a href="#string.split">string.split</a></li>
+				<li class="nested"><a href="#string.trim">string.trim</a></li>
+			</ol>
+		</li>
+		<li class="nested">Math
+			<ol class="nested">
+				<li class="nested"><a href="#count">count</a></li>
+				<li class="nested"><a href="#div">div</a></li>
+				<li class="nested"><a href="#len">len</a></li>
+				<li class="nested"><a href="#round">round</a></li>
+			</ol>
+		</li>
+		<li class="nested">File System
+			<ol class="nested">
+				<li class="nested"><a href="#copyFile">copyFile</a></li>
+				<li class="nested"><a href="#fileExists">fileExists</a></li>
+				<li class="nested"><a href="#formatLog">formatLog</a></li>
+				<li class="nested"><a href="#getDir">getDir</a></li>
+				<li class="nested"><a href="#getFileSize">getFileSize</a></li>
+				<li class="nested"><a href="#getLine">getLine</a></li>
+				<li class="nested"><a href="#getLines">getLines</a></li>
+				<li class="nested"><a href="#replaceInFile">replaceInFile</a></li>
+				<li class="nested"><a href="#search">search</a></li>
+			</ol>
+		</li>
+		<li class="nested">Action
+			<ol class="nested">
+				<li class="nested"><a href="#clear">clear</a></li>
+				<li class="nested"><a href="#draw">draw</a></li>
+				<li class="nested"><a href="#exe">exe</a></li>
+				<li class="nested"><a href="#help">help</a></li>
+				<li class="nested"><a href="#logTable">logTable</a></li>
+				<li class="nested"><a href="#pause">pause</a></li>
+				<li class="nested"><a href="#print">print</a></li>
+				<li class="nested"><a href="#scroll">scroll</a></li>
+			</ol>
+		</li>
+		<li class="nested">Conversion</li>
+			<ol class="nested">
+				<li class="nested"><a href="#str">str</a></li>
+				<li class="nested"><a href="#num">num</a></li>
+				<li class="nested"><a href="#hexToInt">hexToInt</a></li>
+				<li class="nested"><a href="#hexToName">hexToName</a></li>
+				<li class="nested"><a href="#hexToRgb">hexToRgb</a></li>
+				<li class="nested"><a href="#intToHex">intToHex</a></li>
+				<li class="nested"><a href="#intToName">intToName</a></li>
+				<li class="nested"><a href="#rgbToHex">rgbToHex</a></li>
+				<li class="nested"><a href="#rgbToName">rgbToName</a></li>
+			</ol>
+		</li>
+	</ol>
+	</li>
+	<li class="nested"><a href="#clrOptions"> xToName Color Scheme Options </a></li>
+</ol>
+
+
+<div class="md-section-divider"></div>
+
+<h3 id="faqs"><u> FAQs </u></h3>
+
+<div class="accordion">
+
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1">How to install/uninstall?</a>
+        <div id="accordion-1" class="accordion-section-content">
+            <p>To install, just run the Functions+.lua.e script, make sure 'Install' is selected, and then select 'Confirm'! Once that's done, you're good to go :D</p>
+            <p>To uninstall, follow the same instructions as with installing - but this time, select the picker box and choose 'Uninstall'</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">Whats with the "string.X" functions?</a>
+        <div id="accordion-2" class="accordion-section-content">
+            <p>These functions are modifiers to strings (i.e. quoted text). </p>
+            <p>Let's say you have the code: <pre> name = " shirtANDtieler!? " </pre></p>
+			<p>If you wanted to run one of the string.X functions, say the string.trim function, you can either do:</p>
+			<ul>
+				<li><pre> string.trim(name)</pre></li>
+				<p>OR</p>
+				<li><pre> name:trim()</pre></li>
+			</ul>
+			<p>And both will accomplish the same thing.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3">Help! X function isn't working!</a>
+        <div id="accordion-3" class="accordion-section-content">
+            <p>A few things...</p>
+            <ol>
+            	<li>Are the parameters in the correct order? 
+            		<p> Let's take the <a href="#count">count</a> function for example... </p>
+        			<p> If you wanted to count the number of 'f's in the string "fffuuuu-", you'd do:</p>
+        			<pre> count("f", "fffuuuu-") </pre>
+        			<p> and <i>not</i></p>
+        			<pre> count("fffuuuu-", "f") </pre>
+            	</li>
+            	<li>Are you sure your input is correct? (check your spelling)</li>
+            	<li>If none of these suggestions help, feel free to shoot me a message on reddit</li>
+            <ol>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-4">Any risks in using this script?</a>
+        <div id="accordion-4" class="accordion-section-content">
+            <p>As far as installing it goes, there are 0 risks. I have thoroughly tested the install/uninstall process dozens of times and have never encountered any problems.</p>
+            <p>In the case that the uninstall feature isn't working, just reinstall AutoTouch and it'll completely remove Functions+. </p>
+            <p> As far as using the functions go, the only function that could <i>possibly</i> cause some damage is <a href="#exe">exe</a> - but that's only because you're running terminal commands. As long as you're not running commands to remove all files on your device, you'll be perfectly safe :)</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-5">What if I have a suggestion for a function or a bug to report?</a>
+        <div id="accordion-5" class="accordion-section-content">
+            <p>For either a suggestion or a bug, shoot a message to /u/shirtandtieler on Reddit.</p>
+            <p>I'm totally open to (and would love) suggestions for new functions to add, but only if they are useful/practical -though, if you're doubting the practicality of it, still send it to me anyway :)</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+
+</div><!--end .accordion-->
+
+<div class="md-section-divider"></div>
+<br/>
+<div class="md-section-divider"></div>
+
+
+<h3 id="funcAlpha"><u> Functions (A-Z) </u></h3>
+
+<div class="md-section-divider"></div>
+
+<div class="topImg">
+	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
+	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
+</div>
+
 <!-- 
 	START FUNCTION 
 -->
@@ -2862,3 +3098,41 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L7"><code class="language-lua"></code></li></ol></pre>
 
 <div class="md-section-divider"></div>
+
+<br><br>
+<div class="topImg">
+	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
+	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
+</div>
+<h3 id="clrOptions"><u> xToName Color Scheme Options </u></h3>
+<p>For the xToName functions, the second parameter allows for a "colorScheme". Of the 4 choices for schemes, pick the one which suits your needs the best. </p>
+<p>Below, I list a description of all 4 and your options for the "colorScheme" parameter.</p>
+<p>Note that, for each of the color schemes, each level builds upon the previous; in addition, colors #1 takes 3 from grayscale, #2 takes 9 from grayscale, and #3 takes the remaining 7 from grayscale.</p>
+<ol>
+	<li>Grayscale - This scheme includes black and white, along with 19 shades of gray in between. Available options to use this scheme are:</li>
+	<ul>
+		<li>0</li>
+		<li>"gray"</li>
+		<li>"grey"</li>
+	</ul>
+	<li>Colors #1 - This scheme has 20 colors total (3 previous + 17 new). Available options to use this scheme are:</li>
+	<ul>
+		<li>1</li>
+		<li>"small"</li>
+		<li>"basic"</li>
+	</ul>
+	<li>Colors #2 - This scheme has 59 colors total (20 previous + 39 new). Available options to use this scheme are:</li>
+	<ul>
+		<li>2</li>
+		<li>"medium"</li>
+		<li>"indepth"</li>
+	</ul>
+	<li>Colors #3 - This scheme has 89 colors total (59 previous + 30 new). Available options to use this scheme are:</li>
+	<ul>
+		<li>3</li>
+		<li>"large"</li>
+		<li>"complete"</li>
+	</ul>
+</ol>
+</body>
+</html>
