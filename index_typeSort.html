@@ -41,14 +41,13 @@ function switchPage() {
 <pre data-anchor-id="pla5"><code>
 The idea for this script came to me almost a year ago - I wanted to create a way to seamlessly integrate custom 
 functions with AutoTouch. After <i>many</i> hours of hard work, I have created a whole spectrum of different 
-useful functions.
+useful functions. If you're familiar with Python, any similar naming conventions are no coincidence :)
 
-Note that there's still much to be done within this help document. I still need to...
-	> Fix any awkward sounding sentences
+Note that there's still a bit to be done for this help document. I still need to...
 	> Colorize the examples
-	> Fill out the few functions that have missing info 
-		|-> some of the color-format-conversion family (hexToInt, rgbToHex, etc) 
- 		|-> and some of boolean check functions (isStr, isTable, isNil, etc)
+	> Fill out the color-format-conversion functions that have missing info
+And if there's any obvious inconsistencies that I missed, please feel free to tell me about them,
+	as making this doc was very tedious and my patience started to run dry at the end :P
 
 Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 </code></pre>
@@ -2973,7 +2972,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{none currently given}</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3011,8 +3010,8 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	</tr>
 	<tr>
 		<td>colorScheme</td>
-		<td style="text-align:center;">String or Number</td>
-		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
+		<td style="text-align:center;">String</td>
+		<td>See <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
 </tbody></table>
 
@@ -3033,7 +3032,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3088,7 +3087,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3143,7 +3142,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3182,7 +3181,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	<tr>
 		<td>colorScheme</td>
 		<td style="text-align:center;">String</td>
-		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
+		<td>See <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
 </tbody></table>
 
@@ -3203,7 +3202,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3235,7 +3234,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 </thead>
 <tbody>
 	<tr>
-		<td>(r, g, b)</td>
+		<td>r, g, b</td>
 		<td style="text-align:center;">Numbers</td>
 		<td>The red, green, and blue values for the color; Note that I comressed these values into one row for simplicity. When calling the function, these values are separated</td>
 	</tr>
@@ -3258,7 +3257,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">None given at the moment</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
@@ -3290,14 +3289,14 @@ specified format.<br>If you want it to go back to the default settings, run the 
 </thead>
 <tbody>
 	<tr>
-		<td>(r, g, b)</td>
+		<td>r, g, b</td>
 		<td style="text-align:center;">Numbers</td>
-		<td>The red, green, and blue values; Note that I compressed these three into this one cell to save space. When calling the function, separate the values</td>
+		<td>The red, green, and blue values</td>
 	</tr>
 	<tr>
 		<td>colorScheme</td>
 		<td style="text-align:center;">String</td>
-		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
+		<td>See <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
 </tbody></table>
 
@@ -3318,7 +3317,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">None given at the moment</code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None currently given}</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
