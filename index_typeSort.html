@@ -31,6 +31,11 @@ $(document).ready(function() {
         e.preventDefault();
     });
 });
+
+function switchPage() {
+	window.location='index.html#top';
+	return false;
+}
 </script>
 </head>
 <body>
@@ -73,29 +78,10 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 	<li class="nested"><a href="#faqs"> FAQs </a></li>
 	<li class="nested"><a href="#funcAlpha"> Functions </a></li>
 		<ol class="nested">
-		  <li class="nested">File</li>
-		  <li class="nested">Checks/Logic</li>
+		  <li class="nested">Checks / Logic</li>
 		  <ol class="nested">
-  			<li class="nested"><a href="#clear">clear</a></li>
-  			<li class="nested"><a href="#copyFile">copyFile</a></li>
-  			<li class="nested"><a href="#count">count</a></li>
-  			<li class="nested"><a href="#div">div</a></li>
-  			<li class="nested"><a href="#draw">draw</a></li>
-  			<li class="nested"><a href="#exe">exe</a></li>
-  			<li class="nested"><a href="#fileExists">fileExists</a></li>
-  			<li class="nested"><a href="#formatLog">formatLog</a></li>
-  			<li class="nested"><a href="#getActiveApp">getActiveApp</a></li>
-  			<li class="nested"><a href="#getDir">getDir</a></li>
-  			<li class="nested"><a href="#getFileSize">getFileSize</a></li>
-  			<li class="nested"><a href="#getLine">getLine</a></li>
-  			<li class="nested"><a href="#getLines">getLines</a></li>
-  			<li class="nested"><a href="#help">help</a></li>
-  			<li class="nested"><a href="#hexToInt">hexToInt</a></li>
-  			<li class="nested"><a href="#hexToName">hexToName</a></li>
-  			<li class="nested"><a href="#hexToRgb">hexToRgb</a></li>
-  			<li class="nested"><a href="#intToHex">intToHex</a></li>
-  			<li class="nested"><a href="#intToName">intToName</a></li>
-  			<li class="nested"><a href="#isBool">isBool</a></li>
+		  	<li class="nested"><a href="#getActiveApp">getActiveApp</a></li>
+		  	<li class="nested"><a href="#isBool">isBool</a></li>
   			<li class="nested"><a href="#isNil">isNil</a></li>
   			<li class="nested"><a href="#isNotNil">isNotNil</a></li>
   			<li class="nested"><a href="#isNum">isNum</a></li>
@@ -103,30 +89,65 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
   			<li class="nested"><a href="#isTable">isTable</a></li>
   			<li class="nested"><a href="#isin">isin</a></li>
   			<li class="nested"><a href="#isnotin">isnotin</a></li>
-  			<li class="nested"><a href="#join">join</a></li>
-  			<li class="nested"><a href="#len">len</a></li>
-  			<li class="nested"><a href="#logTable">logTable</a></li>
-  			<li class="nested"><a href="#merge">merge</a></li>
-  			<li class="nested"><a href="#num">num</a></li>
-  			<li class="nested"><a href="#pause">pause</a></li>
-  			<li class="nested"><a href="#print">print</a></li>
-  			<li class="nested"><a href="#replaceInFile">replaceInFile</a></li>
-  			<li class="nested"><a href="#rgbToHex">rgbToHex</a></li>
-  			<li class="nested"><a href="#rgbToName">rgbToName</a></li>
-  			<li class="nested"><a href="#round">round</a></li>
-  			<li class="nested"><a href="#scroll">scroll</a></li>
-  			<li class="nested"><a href="#search">search</a></li>
-  			<li class="nested"><a href="#str">str</a></li>
+  			<li class="nested"><a href="#string.startswith">string.startswith</a></li>
   			<li class="nested"><a href="#string.endswith">string.endswith</a></li>
+  			<li class="nested"><a href="#tblsEqual">tblsEqual</a></li>
+		  </ol>
+		  <li class="nested">Variable Modifiers</li>
+		  <ol class="nested">
+		  	<li class="nested"><a href="#join">join</a></li>
+		  	<li class="nested"><a href="#merge">merge</a></li>
   			<li class="nested"><a href="#string.format">string.format</a></li>
   			<li class="nested"><a href="#string.replace">string.replace</a></li>
   			<li class="nested"><a href="#string.split">string.split</a></li>
-  			<li class="nested"><a href="#string.startswith">string.startswith</a></li>
   			<li class="nested"><a href="#string.trim">string.trim</a></li>
-  			<li class="nested"><a href="#string.trim">tblsEqual</a></li>
+		  </ol>
+		  <li class="nested">Math</li>
+		  <ol class="nested">
+		  	<li class="nested"><a href="#count">count</a></li>
+  			<li class="nested"><a href="#div">div</a></li>
+  			<li class="nested"><a href="#len">len</a></li>
+  			<li class="nested"><a href="#round">round</a></li>
+		  </ol>
+		  <li class="nested">File System</li>
+		  <ol class="nested">
+		  	
+  			<li class="nested"><a href="#copyFile">copyFile</a></li>
+  			<li class="nested"><a href="#fileExists">fileExists</a></li>
+  			<li class="nested"><a href="#formatLog">formatLog</a></li>
+  			<li class="nested"><a href="#getDir">getDir</a></li>
+  			<li class="nested"><a href="#getFileSize">getFileSize</a></li>
+  			<li class="nested"><a href="#getLine">getLine</a></li>
+  			<li class="nested"><a href="#getLines">getLines</a></li>
+  			<li class="nested"><a href="#replaceInFile">replaceInFile</a></li>
+  			<li class="nested"><a href="#search">search</a></li>
+		  </ol>
+		  <li class="nested">Action</li>
+		  <ol class="nested">
+		  	<li class="nested"><a href="#clear">clear</a></li>
+		  	<li class="nested"><a href="#draw">draw</a></li>
+  			<li class="nested"><a href="#exe">exe</a></li>
+  			<li class="nested"><a href="#help">help</a></li>
+  			<li class="nested"><a href="#logTable">logTable</a></li>
+  			<li class="nested"><a href="#pause">pause</a></li>
+  			<li class="nested"><a href="#print">print</a></li>
+  			<li class="nested"><a href="#scroll">scroll</a></li>
+		  </ol>
+		  <li class="nested">Conversion</li>
+		  <ol class="nested">
+			<li class="nested"><a href="#str">str</a></li>
+		  	<li class="nested"><a href="#num">num</a></li>
+		  	<li class="nested"><a href="#hexToInt">hexToInt</a></li>
+  			<li class="nested"><a href="#hexToName">hexToName</a></li>
+  			<li class="nested"><a href="#hexToRgb">hexToRgb</a></li>
+  			<li class="nested"><a href="#intToHex">intToHex</a></li>
+  			<li class="nested"><a href="#intToName">intToName</a></li>
+  			<li class="nested"><a href="#rgbToHex">rgbToHex</a></li>
+  			<li class="nested"><a href="#rgbToName">rgbToName</a></li>
   		</ol>
-		</ol>
-	3. <a href="#clrOptions"> xToName Color Scheme Options </a></li>
+	      </ol>
+	3. <a href="#clrOptions"> xToName Color Scheme Options </a>
+        </li>
 </ol>
 
 
