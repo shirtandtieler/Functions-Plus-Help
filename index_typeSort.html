@@ -225,7 +225,7 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 <div class="md-section-divider"></div>
 
 
-<h3 id="funcAlpha"><u> Functions (A-Z) </u></h3>
+<h3 id="funcAlpha"><u> Functions </u></h3>
 
 <div class="md-section-divider"></div>
 
@@ -239,38 +239,39 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 -->
 <h3 id="clear"> clear() </h3>
 <pre><code>Erases the AutoTouch log</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- log.log</code></li><!--
@@ -280,8 +281,11 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 --><li class="L4"><code class="language-lua">clear()</code></li><!--
 --><li class="L5"><code class="language-lua">-- log.log</code></li><!--
 --><li class="L6"><code class="language-lua">--[[</code></li><!--
---><li class="L7"><code class="language-lua">--]]</code></li><!--
---><li class="L8"><code class="language-lua"></code></li></ol></pre>
+--><li class="L7"><code class="language-lua">--]]</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -296,58 +300,58 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 -->
 <h3 id="copyFile"> copyFile(srcFilePath, dstFilePath, overwrite) </h3>
 <pre><code>Copies a file from one location to another</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>srcFilePath</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The original path for the file that you want to copy</td>
+		<td>srcFilePath</td>
+		<td style="text-align:center;">String</td>
+		<td>The original path for the file that you want to copy</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>dstFilePath</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path + file name of where you want the file to be copied to</td>
+		<td>dstFilePath</td>
+		<td style="text-align:center;">String</td>
+		<td>The path + file name of where you want the file to be copied to</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>overwrite</td>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>true if you want it to automatically overwrite a file if one exists at the destination, false if you want it to cancel if there's an existing file at the destination</td>
+		<td>overwrite</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>true if you want it to automatically overwrite a file if one exists at the destination, false if you want it to cancel if there's an existing file at the destination</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">copyFile("/var/mobile/Downloads/script1.lua", "script1.lua")</code></li><!--
 --><li class="L1"><code class="language-lua">-- copies the "script1.lua" file to the AutoTouch scripts directory</code></li><!--
---><li class="L2"><code class="language-lua">-- since <overwrite> was not given, it is set to false by default</code></li><!--
---><li class="L3"><code class="language-lua"></code></li></ol></pre>
+--><li class="L2"><code class="language-lua">-- since <overwrite> was not given, it is set to false by default</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -362,45 +366,44 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 -->
 <h3 id="count"> count(value, input) </h3>
 <pre><code>Counts the number of occurances that appear in an object</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>value</td>
-	 <td style="text-align:center;">String, Number, or Boolean</td>
-	 <td>The item that you want counted</td>
+		<td>value</td>
+		<td style="text-align:center;">String, Number, or Boolean</td>
+		<td>The item that you want counted</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">Any</td>
-	 <td>Contains 0 or more instances of the value parameter</td>
+		<td>input</td>
+		<td style="text-align:center;">Any</td>
+		<td>Contains 0 or more instances of the value parameter</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number of times 'value' appears in 'input'</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number of times 'value' appears in 'input'</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- Example 1: (String, String)</code></li><!--
@@ -413,8 +416,7 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 --><li class="L7"><code class="language-lua">drink = "Bleach"</code></li><!--
 --><li class="L8"><code class="language-lua">drinksHadToday = {"vodka", "water", "vodka", "coca-cola", "vodka"}</code></li><!--
 --><li class="L9"><code class="language-lua">poisonsConsumed = count(drink, drinksHadToday)</code></li><!--
---><li class="L10"><code class="language-lua"> -- set to 0, as no bleach was drunken (at least for today)</code></li><!--
---><li class="L11"><code class="language-lua"></code></li></ol></pre>
+--><li class="L10"><code class="language-lua"> -- set to 0, as no bleach was drunken (at least for today)</code></li></ol></pre>
 
 
 <div class="md-section-divider"></div>
@@ -428,51 +430,53 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 <!-- 
 	START FUNCTION 
 -->
-<h3 id="div"> div(d1, d2) </h3><br><pre><code>Does floor division on the two values
-</code></pre><p><code>Parameters</code></p>
+<h3 id="div"> div(d1, d2) </h3><br><pre><code>Does floor division on the two values</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>d1</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The "numerator" </td>
+		<td>d1</td>
+		<td style="text-align:center;">Number</td>
+		<td>The "numerator" </td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>d2</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The "denominator"</td>
+		<td>d2</td>
+		<td style="text-align:center;">Number</td>
+		<td>The "denominator"</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The most amount of times d2 can go into d1</td>
+		<td style="text-align:center;">Number</td>
+		<td>The most amount of times d2 can go into d1</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">div(10, 2) -- results in 5</code></li><!--
---><li class="L1"><code class="language-lua">div(11, 2) -- also results in 5</code></li><!--
---><li class="L2"><code class="language-lua"></code></li></ol></pre>
+--><li class="L1"><code class="language-lua">div(11, 2) -- also results in 5</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -487,52 +491,49 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 -->
 <h3 id="draw"> draw(shape, size, centerPos) </h3>
 <pre><code>Draws a shape on the screen</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>shape</td>
-	 <td style="text-align:center;">String</td>
-	 <td>Currently supports: square, circle, triangle</td>
+		<td>shape</td>
+		<td style="text-align:center;">String</td>
+		<td>Currently supports: square, circle, triangle</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>size</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The diameter in pixels</td>
+		<td>size</td>
+		<td style="text-align:center;">Number</td>
+		<td>The diameter in pixels</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>centerPos</td>
-	 <td style="text-align:center;">Table</td>
-	 <td>A table of 2 numbers dictating the X, Y coordinates to draw the shape around</td>
+		<td>centerPos</td>
+		<td style="text-align:center;">Table</td>
+		<td>A table of 2 numbers dictating the X, Y coordinates to draw the shape around</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">draw("circle", 20, {400, 400})</code></li><!--
@@ -540,8 +541,11 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 --><li class="L2"><code class="language-lua"></code></li><!--
 --><li class="L3"><code class="language-lua">width, height = getScreenResolution()</code></li><!--
 --><li class="L4"><code class="language-lua">draw("square", width/4, {width/2, height/2})</code></li><!--
---><li class="L5"><code class="language-lua">  -- draws a square, with a length/width of a quarter of the width, around the center of the screen</code></li><!--
---><li class="L6"><code class="language-lua"></code></li></ol></pre>
+--><li class="L5"><code class="language-lua">  -- draws a square, with a length/width of a quarter of the width, around the center of the screen</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -554,47 +558,51 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 <!-- 
 	START FUNCTION 
 -->
-<h3 id="exe"> exe(cmd) </h3><pre><code>Runs a specified command (Be careful when using!)
-</code></pre><p><code>Parameters</code></p>
+<h3 id="exe"> exe(cmd) </h3><pre><code>Runs a specified command (Be careful when using!)</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>cmd</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The command you want to run</td>
+		<td>cmd</td>
+		<td style="text-align:center;">String</td>
+		<td>The command you want to run</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The output of the command</td>
+		<td style="text-align:center;">String</td>
+		<td>The output of the command</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">ip = exe("ipconfig getifaddr en0")</code></li><!--
 --><li class="L1"><code class="language-lua">  -- ip == the user's local IP address (if connected to wifi)</code></li><!--
 --><li class="L2"><code class="language-lua">exe("cd /var/mobile/Downloads; mkdir YoutubeVideos")</code></li><!--
 --><li class="L3"><code class="language-lua">  -- makes a folder called "YoutubeVideos" in the "/var/mobile/Downloads" folder</code></li><!--
---><li class="L4"><code class="language-lua"></code></li><!--
---><li class="L5"><code class="language-lua"></code></li></ol></pre>
+--><li class="L4"><code class="language-lua"></code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -608,38 +616,39 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 -->
 <h3 id="fileExists"> fileExists(file) </h3>
 <pre><code>Checks if a certain file or folder exists</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>true if the file/folder does exist, otherwise false</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>true if the file/folder does exist, otherwise false</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">if fileExists("/var/mobile/Library/AutoTouch/Library/log.log") then</code></li><!--
@@ -650,8 +659,11 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 --><li class="L5"><code class="language-lua">  log("This should not get logged....")</code></li><!--
 --><li class="L6"><code class="language-lua">else</code></li><!--
 --><li class="L7"><code class="language-lua">  log("Fake folder is fake!") -- this is what gets printed to the log</code></li><!--
---><li class="L8"><code class="language-lua">end</code></li><!--
---><li class="L9"><code class="language-lua"></code></li></ol></pre>
+--><li class="L8"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -664,46 +676,45 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 	START FUNCTION 
 -->
 <h3 id="formatLog"> formatLog(option, value) </h3><pre><code>Formats the log for easier viewing <br>Note: You only have to run this once. After that, anything added to the log will be in the 
-specified format.<br>If you want it to go back to the default settings, run the function with no parameters (this will apply to anything logged after reverting it)
-</code></pre><p><code>Parameters</code></p>
+specified format.<br>If you want it to go back to the default settings, run the function with no parameters (this will apply to anything logged after reverting it)</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>option</td>
-	 <td style="text-align:center;">String</td>
-	 <td>Can either be 'prefix' (or 'p') to customize the prefix of the line, 'seperator' ('sep' and 's' also work) to customize the seperation between each entry</td>
+		<td>option</td>
+		<td style="text-align:center;">String</td>
+		<td>Can either be 'prefix' (or 'p') to customize the prefix of the line, 'seperator' ('sep' and 's' also work) to customize the seperation between each entry</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>value</td>
-	 <td style="text-align:center;">String</td>
-	 <td>What you want to be used for the specified option</td>
+		<td>value</td>
+		<td style="text-align:center;">String</td>
+		<td>What you want to be used for the specified option</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- log.log</code></li><!--
@@ -721,8 +732,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L12"><code class="language-lua">> Did this pause for 16 seconds?</code></li><!--
 --><li class="L13"><code class="language-lua">* * * * * * * * * * * * * * * * * * * *</code></li><!--
 --><li class="L14"><code class="language-lua">> Script ran successfully!</code></li><!--
---><li class="L15"><code class="language-lua">--]]</code></li><!--
---><li class="L16"><code class="language-lua"></code></li></ol></pre>
+--><li class="L15"><code class="language-lua">--]]</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -736,43 +750,48 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="getActiveApp"> getActiveApp() </h3>
 <pre><code>Gets the AppID of the currently active app</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The full app identifier</td>
+		<td style="text-align:center;">String</td>
+		<td>The full app identifier</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- while in the AutoTouch app</code></li><!--
 --><li class="L1"><code class="language-lua">log(getActiveApp())</code></li><!--
 --><li class="L2"><code class="language-lua">-- prints 'me.autotouch.AutoTouch.ios8' to the log</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -787,44 +806,48 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="getDir"> getDir(dir) </h3>
 <pre><code>Gets all the folders/files in specific directory</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>dir</td>
-	 <td style="text-align:center;">String</td>
-	 <td>Path of the directory you want to get the files in</td>
+		<td>dir</td>
+		<td style="text-align:center;">String</td>
+		<td>Path of the directory you want to get the files in</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Table</td>
-	 <td>A list of the folder/file names</td>
+		<td style="text-align:center;">Table</td>
+		<td>A list of the folder/file names</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">AT_Library_Files = getDir("/var/mobile/Library/AutoTouch/Library") -- the last slash is optional</code></li><!--
 --><li class="L1"><code class="language-lua">print(AT_Library_Files)</code></li><!--
---><li class="L2"><code class="language-lua">-- prints "{'data.sqlite3', 'license', 'log.log'}" to the log</code></li><!--
---><li class="L3"><code class="language-lua"></code></li></ol></pre>
+--><li class="L2"><code class="language-lua">-- prints "{'data.sqlite3', 'license', 'log.log'}" to the log</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -839,43 +862,47 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="getFileSize"> getFileSize(fileName) </h3>
 <pre><code>Gets the size of the specified file</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number of bytes the file is</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number of bytes the file is</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">oneKB = getFileSize("oneKilobyteFile.lua")</code></li><!--
---><li class="L1"><code class="language-lua">-- oneKB == 1024</code></li><!--
---><li class="L2"><code class="language-lua"></code></li></ol></pre>
+--><li class="L1"><code class="language-lua">-- oneKB == 1024</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -890,45 +917,44 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="getLine"> getLine(file, lineNum) </h3>
 <pre><code>Similar to <a href="#getLines">getLines</a>, but just gets one specified line</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>lineNum</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The line that the desired text is on (starts at 1)</td>
+		<td>lineNum</td>
+		<td style="text-align:center;">Number</td>
+		<td>The line that the desired text is on (starts at 1)</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The specified line</td>
+		<td style="text-align:center;">String</td>
+		<td>The specified line</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- mySecrets.txt (located in /var/mobile/Documents/)</code></li><!--
@@ -939,6 +965,10 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L5"><code class="language-lua">--]]</code></li><!--
 --><li class="L6"><code class="language-lua">secret_crosswords = getLine("/var/mobile/Documents/mySecrets.txt", 2)</code></li><!--
 --><li class="L7"><code class="language-lua">print(secret_crosswords) -- prints "Crosswords make me horny" to the log</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -953,44 +983,49 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="getLines"> getLines(file) </h3>
 <pre><code>Get the lines of a specified file</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Table</td>
-	 <td>A list of each line in the file</td>
+		<td style="text-align:center;">Table</td>
+		<td>A list of each line in the file</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- Using the "mySecrets.txt" file in the getLine example....</code></li><!--
 --><li class="L1"><code class="language-lua">secrets = getLines("/var/mobile/Documents/mySecrets.txt")</code></li><!--
 --><li class="L2"><code class="language-lua">print(secrets)</code></li><!--
 --><li class="L3"><code class="language-lua">-- prints "{'I have 6 toes', 'Crosswords make me horny', 'I ate dog food once out of curiosity'}" to the log</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1005,44 +1040,48 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="help"> help(func) </h3>
 <pre><code>Print to the log more information about a topic</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>func</td>
-	 <td style="text-align:center;">String</td>
-	 <td>If left empty, it will provide general information; If "functions" is used, it will log a list of the function names; If a string of a function name is used, it will log a plain text version of the help shown in this document.</td>
+		<td>func</td>
+		<td style="text-align:center;">String</td>
+		<td>If left empty, it will provide general information; If "functions" is used, it will log a list of the function names; If a string of a function name is used, it will log a plain text version of the help shown in this document.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">help() -- logs contact info and other general-info kind of stuff</code></li><!--
 --><li class="L1"><code class="language-lua">help("functions") -- logs a list of functions</code></li><!--
---><li class="L2"><code class="language-lua">help("str") -- logs help about the function 'str'</code></li><!--
---><li class="L3"><code class="language-lua"></code></li></ol></pre>
+--><li class="L2"><code class="language-lua">help("str") -- logs help about the function 'str'</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1057,41 +1096,46 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="hexToInt"> hexToInt(hex) </h3>
 <pre><code>Convert a hexadecimal color to its integer equivalent</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>hex</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The hex value, prefixed with "0x"</td>
+		<td>hex</td>
+		<td style="text-align:center;">Number</td>
+		<td>The hex value, prefixed with "0x"</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The integer representation</td>
+		<td style="text-align:center;">Number</td>
+		<td>The integer representation</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">{none currently given}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1106,48 +1150,51 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="hexToName"> hexToName(hex, colorScheme) </h3>
 <pre><code>Converts a color in hexadecimal to the closest matching name</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>hex</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The hexadecimal value, prefixed with "0x"</td>
+		<td>hex</td>
+		<td style="text-align:center;">Number</td>
+		<td>The hexadecimal value, prefixed with "0x"</td>
 	</tr>
-
 	<tr>
-	 <td>colorScheme</td>
-	 <td style="text-align:center;">String or Number</td>
-	 <td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
+		<td>colorScheme</td>
+		<td style="text-align:center;">String or Number</td>
+		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The closest matching name based on the inputs</td>
+		<td style="text-align:center;">String</td>
+		<td>The closest matching name based on the inputs</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">{None given at the moment}</code></li><!--
---><li class="L1"><code class="language-lua"></code></li></ol></pre>
+--><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1162,41 +1209,46 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="hexToRgb"> hexToRgb(hex) </h3>
 <pre><code>Converts a hexadecimal to red, green, blue format</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>hex</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The hex value, prefixed by "0x"</td>
+		<td>hex</td>
+		<td style="text-align:center;">Number</td>
+		<td>The hex value, prefixed by "0x"</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number representation</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number representation</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1211,41 +1263,46 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="intToHex"> intToHex(int) </h3>
 <pre><code>Converts an integer representation of a color to hexadecimal</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>int</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The integer color you want to be converted</td>
+		<td>int</td>
+		<td style="text-align:center;">Number</td>
+		<td>The integer color you want to be converted</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>A string of the hexidecimal value</td>
+		<td style="text-align:center;">String</td>
+		<td>A string of the hexidecimal value</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1260,46 +1317,51 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="intToName"> intToName(i, colorScheme) </h3>
 <pre><code>Converts an integer color to its closest name</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 	<td>i</td>
-	 	<td style="text-align:center;">Number</td>
-	 	<td>The color in integer format that you want to convert</td>
+		<td>i</td>
+		<td style="text-align:center;">Number</td>
+		<td>The color in integer format that you want to convert</td>
 	</tr>
 	<tr>
 		<td>colorScheme</td>
-	 	<td style="text-align:center;">String</td>
-	 	<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
+		<td style="text-align:center;">String</td>
+		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The closest matching name based on the input</td>
+		<td style="text-align:center;">String</td>
+		<td>The closest matching name based on the input</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">{None given at the moment}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1313,42 +1375,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isBool"> isBool(bool) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1363,42 +1425,46 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="isFullPath"> isFullPath(fileName) </h3>
 <pre><code>Checks if the given parameter is a valid path name</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>fileName</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>fileName</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>true if it's a valid path, false otherwise</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>true if it's a valid path, false otherwise</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">HEY!!!!!! DELETE THIS FUNCTION!!!!!</code></li><!--
---><li class="L1"><code class="language-lua"></code></li></ol></pre>
+--><li class="L0"><code class="language-lua">HEY!!!!!! DELETE THIS FUNCTION!!!!!</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1412,42 +1478,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isNil"> isNil(x) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1461,42 +1527,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isNotNil"> isNotNil(x) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1510,42 +1576,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isNum"> isNum(number) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1559,42 +1625,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isStr"> isStr(input) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1608,42 +1674,42 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	START FUNCTION
 -->
 <h3 id="isTable"> isTable(table) </h3>
-<pre><code><<NONE GIVEN>></code></pre>
+<pre><code>{INCOMPLETE}</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>None</td>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;"></td>
-	 <td></td>
+		<td style="text-align:center;"></td>
+		<td></td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
-<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua"></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"></ol></pre>
 
 <div class="md-section-divider"></div>
 
@@ -1658,45 +1724,44 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="isin"> isin(x,y) </h3>
 <pre><code>Checks if x is a substring or subelement of y</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>x</td>
-	 <td style="text-align:center;">Any (string, table, number, boolean)</td>
-	 <td>The substring/subelement</td>
+		<td>x</td>
+		<td style="text-align:center;">Any (string, table, number, boolean)</td>
+		<td>The substring/subelement</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>y</td>
-	 <td style="text-align:center;">Any</td>
-	 <td>The larger object that you want the function to parse</td>
+		<td>y</td>
+		<td style="text-align:center;">Any</td>
+		<td>The larger object that you want the function to parse</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>'true' if x is in y, otherwise false</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>'true' if x is in y, otherwise false</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- Example 1: (String, String)</code></li><!--
@@ -1711,8 +1776,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L9"><code class="language-lua">if isin(itemToCheck, animals) then</code></li><!--
 --><li class="L10"><code class="language-lua">  log("A baby is a pet too!")</code></li><!--
 --><li class="L11"><code class="language-lua">  -- since "baby" is not in the table, this does NOT get logged</code></li><!--
---><li class="L12"><code class="language-lua">end</code></li><!--
---><li class="L13"><code class="language-lua"></code></li></ol></pre>
+--><li class="L12"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1725,46 +1793,45 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="isnotin"> isnotin(x,y) </h3><pre><code>The inverse of 'isin' - made as an easier way to type than 'not isin(<x>,<y>)'
-</code></pre><p><code>Parameters</code></p>
+<h3 id="isnotin"> isnotin(x,y) </h3><pre><code>The inverse of 'isin' - made as an easier way to type than 'not isin(<x>,<y>)'</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>x</td>
-	 <td style="text-align:center;">Any</td>
-	 <td>The substring or subelement</td>
+		<td>x</td>
+		<td style="text-align:center;">Any</td>
+		<td>The substring or subelement</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>y</td>
-	 <td style="text-align:center;">Any</td>
-	 <td>The larger object that you want the function to parse</td>
+		<td>y</td>
+		<td style="text-align:center;">Any</td>
+		<td>The larger object that you want the function to parse</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>'true' if x is NOT in y, otherwise 'false'</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>'true' if x is NOT in y, otherwise 'false'</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- Example 1: (Number, String)</code></li><!--
@@ -1773,8 +1840,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L3"><code class="language-lua">if isnotin(birth_year, birthday) then</code></li><!--
 --><li class="L4"><code class="language-lua">  log("No details on the birth year in the birthday description text!")</code></li><!--
 --><li class="L5"><code class="language-lua">  -- gets logged since the string '1992' is nowhere in the description</code></li><!--
---><li class="L6"><code class="language-lua">end</code></li><!--
---><li class="L7"><code class="language-lua"></code></li></ol></pre>
+--><li class="L6"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1789,46 +1859,50 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="join"> join(...) </h3>
 <pre><code>Concatenates folder/file paths using proper formatting</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>...</td>
-	 <td style="text-align:center;">1+ String(s)</td>
-	 <td>The paths/names of folders/files (order matters)</td>
+		<td>...</td>
+		<td style="text-align:center;">1+ String(s)</td>
+		<td>The paths/names of folders/files (order matters)</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>A formatted path</td>
+		<td style="text-align:center;">String</td>
+		<td>A formatted path</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">FuncPlus_File = join(rootDir(), "Functions+.lua")</code></li><!--
 --><li class="L1"><code class="language-lua">-- FuncPlus_File == "/var/mobile/Library/AutoTouch/Scripts/Functions+.lua"</code></li><!--
 --><li class="L2"><code class="language-lua"></code></li><!--
 --><li class="L3"><code class="language-lua">random_Image = join("var/", "/mobile/", "/Media", "DCIM", "100APPLE", "/IMG_2011.PNG")</code></li><!--
---><li class="L4"><code class="language-lua">-- random_Image == "/var/mobile/Media/DCIM/100APPLE/IMG_2011.PNG"</code></li><!--
---><li class="L5"><code class="language-lua"></code></li></ol></pre>
+--><li class="L4"><code class="language-lua">-- random_Image == "/var/mobile/Media/DCIM/100APPLE/IMG_2011.PNG"</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1843,42 +1917,39 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="len"> len(input) </h3>
 <pre><code>Gets the length or size of an object</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">Table or String</td>
-	 <td>The item you want to find the length/size of</td>
+		<td>input</td>
+		<td style="text-align:center;">Table or String</td>
+		<td>The item you want to find the length/size of</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The length/size of &#60;input&#62;
-	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
-</div>
-
-<h3</td>
+		<td style="text-align:center;">Number</td>
+		<td>The length/size of &#60;input&#62;</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- in Lua, you can use # before a table name to get its length</code></li><!--
@@ -1889,8 +1960,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L5"><code class="language-lua">log(len(partOfBody)) -- logs 3, which is correct</code></li><!--
 --><li class="L6"><code class="language-lua"></code></li><!--
 --><li class="L7"><code class="language-lua">item = "potato"</code></li><!--
---><li class="L8"><code class="language-lua">log(len(item)) -- logs 6</code></li><!--
---><li class="L9"><code class="language-lua"></code></li></ol></pre>
+--><li class="L8"><code class="language-lua">log(len(item)) -- logs 6</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1905,38 +1979,39 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="logTable"> logTable(tabl) </h3>
 <pre><code>Pretty prints a table to the log using indents and formatting</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>tabl</td>
-	 <td style="text-align:center;">Table</td>
-	 <td>The table to be printed</td>
+		<td>tabl</td>
+		<td style="text-align:center;">Table</td>
+		<td>The table to be printed</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">letters2nums = {["a"]=1, ["b"]=2, ["cde"]={3,4,5}, ["f"]=6}</code></li><!--
@@ -1952,8 +2027,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L10"><code class="language-lua">  }, </code></li><!--
 --><li class="L11"><code class="language-lua">  ["f"]=6</code></li><!--
 --><li class="L12"><code class="language-lua">}</code></li><!--
---><li class="L13"><code class="language-lua">--]]</code></li><!--
---><li class="L14"><code class="language-lua"></code></li></ol></pre>
+--><li class="L13"><code class="language-lua">--]]</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -1968,38 +2046,39 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="merge"> merge(...) </h3>
 <pre><code>Merges the objects into one table (if custom keys are used in inputted tables, the later items will take precendence)</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>...</td>
-	 <td style="text-align:center;">0 or more objects of any type</td>
-	 <td>As many items as you want to be merged together</td>
+		<td>...</td>
+		<td style="text-align:center;">0 or more objects of any type</td>
+		<td>As many items as you want to be merged together</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Table</td>
-	 <td>A table containing all the elements given (no order guarenteed)</td>
+		<td style="text-align:center;">Table</td>
+		<td>A table containing all the elements given (no order guarenteed)</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">two_letter_words = {"by", "if", "up"}</code></li><!--
@@ -2012,8 +2091,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L7"><code class="language-lua">world = {["w"]=1, ["o"]=2, ["r"]=3, ["l"]=4, ["d"]=5}</code></li><!--
 --><li class="L8"><code class="language-lua">greeting = merge(hello, world)</code></li><!--
 --><li class="L9"><code class="language-lua">-- greeting == {["h"]=1, ["e"]=2, ["l"]=4, ["o"]=2, ["w"]=1, ["r"]=3, ["d"]=5}</code></li><!--
---><li class="L10"><code class="language-lua">--  note that the "l" and "o" keys from <hello> were replaced by the indicies of the letters in <world></code></li><!--
---><li class="L11"><code class="language-lua"></code></li></ol></pre>
+--><li class="L10"><code class="language-lua">--  note that the "l" and "o" keys from <hello> were replaced by the indicies of the letters in <world></code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2026,39 +2108,40 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="num"> num(input) </h3><pre><code>A shorter version of Lua's tonumber
-</code></pre><p><code>Parameters</code></p>
+<h3 id="num"> num(input) </h3><pre><code>A shorter version of Lua's tonumber</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The thing to be turned into a number</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The thing to be turned into a number</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>A number-ified version of input</td>
+		<td style="text-align:center;">Number</td>
+		<td>A number-ified version of input</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">result = "5 is my answer"</code></li><!--
@@ -2066,8 +2149,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L2"><code class="language-lua">-- takes a substring of the first character to the second (doesn't include the second) and then converts it to a number</code></li><!--
 --><li class="L3"><code class="language-lua">score = answer/5*100</code></li><!--
 --><li class="L4"><code class="language-lua">log("Your answer is " .. str(score) .. "% correct!")</code></li><!--
---><li class="L5"><code class="language-lua">-- score == 100</code></li><!--
---><li class="L6"><code class="language-lua"></code></li></ol></pre>
+--><li class="L5"><code class="language-lua">-- score == 100</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2080,51 +2166,53 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="pause"> pause(time, unit) </h3><pre><code>An easier way to use usleep without having to wonder if you've used enough 0s
-</code></pre><p><code>Parameters</code></p>
+<h3 id="pause"> pause(time, unit) </h3><pre><code>An easier way to use usleep without having to wonder if you've used enough 0s</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>time</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number of <unit>s that you want to sleep for</td>
+		<td>time</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number of <unit>s that you want to sleep for</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>unit</td>
-	 <td style="text-align:center;">String</td>
-	 <td>If left empty or nil, it will sleep for <time> microseconds (aka normal usleep); Use "ms" for milliseconds, "s" for seconds, and "m" for minutes</td>
+		<td>unit</td>
+		<td style="text-align:center;">String</td>
+		<td>If left empty or nil, it will sleep for <time> microseconds (aka normal usleep); Use "ms" for milliseconds, "s" for seconds, and "m" for minutes</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">pause(1000000) -- pauses for 1 million microseconds, aka a second</code></li><!--
---><li class="L1"><code class="language-lua">pause(1, "s") -- also pauses for 1 second</code></li><!--
---><li class="L2"><code class="language-lua"></code></li></ol></pre>
+--><li class="L1"><code class="language-lua">pause(1, "s") -- also pauses for 1 second</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2137,43 +2225,47 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="print"> print(...) </h3><pre><code>Implements Lua's print function while also adding in support for tables
-</code></pre><p><code>Parameters</code></p>
+<h3 id="print"> print(...) </h3><pre><code>Implements Lua's print function while also adding in support for tables</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>...</td>
-	 <td style="text-align:center;">0 or more objects of any type</td>
-	 <td>The stuff you want to be printed</td>
+		<td>...</td>
+		<td style="text-align:center;">0 or more objects of any type</td>
+		<td>The stuff you want to be printed</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">print("The following", 3, "objects were found on the deceased's body:",{"keys", "a used straw", "cucumber"})</code></li><!--
---><li class="L1"><code class="language-lua"></code></li></ol></pre>
+--><li class="L0"><code class="language-lua">print("The following", 3, "objects were found on the deceased's body:",{"keys", "a used straw", "cucumber"})</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2188,66 +2280,59 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="replaceInFile"> replaceInFile(file, before, after, limit, backup) </h3>
 <pre><code>Replaces some text within a specified file</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can input just the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can input just the name of the file.</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>before</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The text in the file that you want replaced</td>
+		<td>before</td>
+		<td style="text-align:center;">String</td>
+		<td>The text in the file that you want replaced</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>after</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The new text that you want to replace the old text with; set to nil or an empty string if you want to simply remove the text.</td>
+		<td>after</td>
+		<td style="text-align:center;">String</td>
+		<td>The new text that you want to replace the old text with; set to nil or an empty string if you want to simply remove the text.</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>limit</td>
-	 <td style="text-align:center;">int</td>
-	 <td>Sets the number of replacements you want to be made in the file; set to nil or 0 to change every found location.</td>
+		<td>limit</td>
+		<td style="text-align:center;">int</td>
+		<td>Sets the number of replacements you want to be made in the file; set to nil or 0 to change every found location.</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>backup</td>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>Whether or not you want the file to be backed up. If set to true, it will create a copy with a ".bak" extension; if left out or set to nil, it will default to true.</td>
+		<td>backup</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>Whether or not you want the file to be backed up. If set to true, it will create a copy with a ".bak" extension; if left out or set to nil, it will default to true.</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- example.lua (located in scripts directory)</code></li><!--
@@ -2261,8 +2346,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L8"><code class="language-lua">  usleep(32000)</code></li><!--
 --><li class="L9"><code class="language-lua">  tap(180, 200)</code></li><!--
 --><li class="L10"><code class="language-lua">  usleep(32000)</code></li><!--
---><li class="L11"><code class="language-lua">-- and does not create a backup</code></li><!--
---><li class="L12"><code class="language-lua"></code></li></ol></pre>
+--><li class="L11"><code class="language-lua">-- and does not create a backup</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2277,41 +2365,46 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="rgbToHex"> rgbToHex(r,g,b) </h3>
 <pre><code>Converts a color in RGB format to its hexadecimal value</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-		 <td>(r, g, b)</td>
-		 <td style="text-align:center;">Numbers</td>
-		 <td>The red, green, and blue values for the color; Note that I comressed these values into one row for simplicity. When calling the function, these values are separated</td>
+		<td>(r, g, b)</td>
+		<td style="text-align:center;">Numbers</td>
+		<td>The red, green, and blue values for the color; Note that I comressed these values into one row for simplicity. When calling the function, these values are separated</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The hexadecimal equivalent</td>
+		<td style="text-align:center;">String</td>
+		<td>The hexadecimal equivalent</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">None given at the moment</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2326,46 +2419,51 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="rgbToName"> rgbToName(r, g, b, colorScheme) </h3>
 <pre><code>Converts a color in red, green, blue format to the closest matching name</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>(r, g, b)</td>
-	 <td style="text-align:center;">Numbers</td>
-	 <td>The red, green, and blue values; Note that I compressed these three into this one cell to save space. When calling the function, separate the values</td>
+		<td>(r, g, b)</td>
+		<td style="text-align:center;">Numbers</td>
+		<td>The red, green, and blue values; Note that I compressed these three into this one cell to save space. When calling the function, separate the values</td>
 	</tr>
 	<tr>
 		<td>colorScheme</td>
 		<td style="text-align:center;">String</td>
 		<td>There are 4 color schemes to choose from - see <a href="#clrNameInfo">this section</a> for your options. </td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The closest matching color name based on the input</td>
+		<td style="text-align:center;">String</td>
+		<td>The closest matching color name based on the input</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">None given at the moment</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2380,53 +2478,55 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="round"> round(num, places) </h3>
 <pre><code>Rounds a number to specified number of places</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>num</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>A number with decimal places</td>
+		<td>num</td>
+		<td style="text-align:center;">Number</td>
+		<td>A number with decimal places</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>places</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number of places you want to round the number to</td>
+		<td>places</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number of places you want to round the number to</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Number</td>
-	 <td>The rounded number</td>
+		<td style="text-align:center;">Number</td>
+		<td>The rounded number</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">pi = round(math.pi, 2)</code></li><!--
 --><li class="L1"><code class="language-lua">  -- pi == 3.14</code></li><!--
 --><li class="L2"><code class="language-lua"></code></li><!--
 --><li class="L3"><code class="language-lua">e = round(2.71828, 0)</code></li><!--
---><li class="L4"><code class="language-lua">  -- e == 3</code></li><!--
---><li class="L5"><code class="language-lua"></code></li></ol></pre>
+--><li class="L4"><code class="language-lua">  -- e == 3</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2441,58 +2541,58 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="scroll"> scroll(dir, speed, repeats) </h3>
 <pre><code>Scrolls the screen in a cardinal direction</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>dir</td>
-	 <td style="text-align:center;">String</td>
-	 <td>One of: 'u' (up), 'd' (down), 'l' (left), or 'r' (right)</td>
+		<td>dir</td>
+		<td style="text-align:center;">String</td>
+		<td>One of: 'u' (up), 'd' (down), 'l' (left), or 'r' (right)</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>speed</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>A number between 1 and 5, where 1 is the slowest and 5 is the fastest</td>
+		<td>speed</td>
+		<td style="text-align:center;">Number</td>
+		<td>A number between 1 and 5, where 1 is the slowest and 5 is the fastest</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>repeats</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The number of times you want it to scroll</td>
+		<td>repeats</td>
+		<td style="text-align:center;">Number</td>
+		<td>The number of times you want it to scroll</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">None</td>
-	 <td>None</td>
+		<td style="text-align:center;">None</td>
+		<td>None</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">scroll('d', 1)</code></li><!--
 --><li class="L1"><code class="language-lua">  -- scrolls down (ie simulates a finger drag upwards) at a snail's pace, doing so one time</code></li><!--
---><li class="L2"><code class="language-lua"></code></li><!--
---><li class="L3"><code class="language-lua"></code></li></ol></pre>
+--><li class="L2"><code class="language-lua"></code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2507,59 +2607,54 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="search"> search(file, query, startSearch, endSearch) </h3>
 <pre><code>Searches a specified file for some text</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>file</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
+		<td>file</td>
+		<td style="text-align:center;">String</td>
+		<td>The path/location of the target file; note that if the file is in the scripts directory, you can just input the name of the file.</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>query</td>
-	 <td style="text-align:center;">String</td>
-	 <td>What you want to search the target file for</td>
+		<td>query</td>
+		<td style="text-align:center;">String</td>
+		<td>What you want to search the target file for</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>startSearch</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The index of the file that you want the search to start at (starts at 1 and includes whitespaces)</td>
+		<td>startSearch</td>
+		<td style="text-align:center;">Number</td>
+		<td>The index of the file that you want the search to start at (starts at 1 and includes whitespaces)</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>endSearch</td>
-	 <td style="text-align:center;">Number</td>
-	 <td>The index of the file that you want the search to stop at</td>
+		<td>endSearch</td>
+		<td style="text-align:center;">Number</td>
+		<td>The index of the file that you want the search to stop at</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Table</td>
-	 <td>A nested table, where each inner-table contains the start index and end index of the found result</td>
+		<td style="text-align:center;">Table</td>
+		<td>A nested table, where each inner-table contains the start index and end index of the found result</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">-- log.log</code></li><!--
@@ -2572,8 +2667,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L7"><code class="language-lua">--]]</code></li><!--
 --><li class="L8"><code class="language-lua">entries_from_feb12 = search("/var/mobile/Library/AutoTouch/Library/log.log", "02-12")</code></li><!--
 --><li class="L9"><code class="language-lua">print(entries_from_feb12)</code></li><!--
---><li class="L10"><code class="language-lua">-- prints "{{1,5}, {41, 45}}" to the log</code></li><!--
---><li class="L11"><code class="language-lua"></code></li></ol></pre>
+--><li class="L10"><code class="language-lua">-- prints "{{1,5}, {41, 45}}" to the log</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2586,39 +2684,40 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="str"> str(input) </h3><pre><code>An improved version of Lua's "tostring" which allows you to turn any object into a string (good for printing to the log)
-</code></pre><p><code>Parameters</code></p>
+<h3 id="str"> str(input) </h3><pre><code>An improved version of Lua's "tostring" which allows you to turn any object into a string (good for printing to the log)</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">Any (String, Number, Boolean, Table, Nil)</td>
-	 <td>The thing to be turned into a string</td>
+		<td>input</td>
+		<td style="text-align:center;">Any (String, Number, Boolean, Table, Nil)</td>
+		<td>The thing to be turned into a string</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>A string-ified version of input</td>
+		<td style="text-align:center;">String</td>
+		<td>A string-ified version of input</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">log("Does " .. str(3) .. " * 2 == 6? " .. str(3*2==6))</code></li><!--
@@ -2626,8 +2725,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L2"><code class="language-lua"></code></li><!--
 --><li class="L3"><code class="language-lua">randomObjects = {"a", 14, false, "b", nil, true}</code></li><!--
 --><li class="L4"><code class="language-lua">log(str(randomObjects))</code></li><!--
---><li class="L5"><code class="language-lua">-- logs "{'a', 14, false, 'b', nil, true}" </code></li><!--
---><li class="L6"><code class="language-lua"></code></li></ol></pre>
+--><li class="L5"><code class="language-lua">-- logs "{'a', 14, false, 'b', nil, true}" </code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2642,45 +2744,44 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.endswith"> string.endswith(input, ends) </h3>
 <pre><code>A check to see if a string ends with a certain string</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string to check </td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string to check </td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>ends</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The possible sub-string</td>
+		<td>ends</td>
+		<td style="text-align:center;">String</td>
+		<td>The possible sub-string</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>'true' if &#60;input&#62; ends with &#60;ends&#62;, otherwise 'false'</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>'true' if &#60;input&#62; ends with &#60;ends&#62;, otherwise 'false'</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">diss = "You are so dumb that your dog teaches you tricks."</code></li><!--
@@ -2691,8 +2792,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L5"><code class="language-lua">  -- this is what gets logged</code></li><!--
 --><li class="L6"><code class="language-lua">else</code></li><!--
 --><li class="L7"><code class="language-lua">  log("Some other diss was made")</code></li><!--
---><li class="L8"><code class="language-lua">end</code></li><!--
---><li class="L9"><code class="language-lua"></code></li></ol></pre>
+--><li class="L8"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2707,38 +2811,39 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.trim"> string.trim(input) </h3>
 <pre><code>Removes any whitespace around of a string</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string will possible whitespace at the start or end</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string will possible whitespace at the start or end</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>A fixed version of the string without the leading/trailing whitespace</td>
+		<td style="text-align:center;">String</td>
+		<td>A fixed version of the string without the leading/trailing whitespace</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">code = "    if x then y"</code></li><!--
@@ -2747,8 +2852,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L3"><code class="language-lua"></code></li><!--
 --><li class="L4"><code class="language-lua">title = " [    HELLO    ] "</code></li><!--
 --><li class="L5"><code class="language-lua">trimmedTitle = title:trim()</code></li><!--
---><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li><!--
---><li class="L7"><code class="language-lua"></code></li></ol></pre>
+--><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2761,46 +2869,45 @@ specified format.<br>If you want it to go back to the default settings, run the 
 <!--
 	START FUNCTION
 -->
-<h3 id="string.format"> string.format(input, ...) </h3><pre><code>An easier way to format a string than to use Lua's string.format function
-</code></pre><p><code>Parameters</code></p>
+<h3 id="string.format"> string.format(input, ...) </h3><pre><code>An easier way to format a string than to use Lua's string.format function</code></pre>
+
+<p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string to be formatted with open+closed curly brackets whereever you want one of the following variables to be inserted</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string to be formatted with open+closed curly brackets whereever you want one of the following variables to be inserted</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>...</td>
-	 <td style="text-align:center;">0 or more Strings and/or Numbers</td>
-	 <td>"..." allows you to insert a near-infinite amount of variables. Each open+closed curly brackets will be replaced by the corresponding item</td>
+		<td>...</td>
+		<td style="text-align:center;">0 or more Strings and/or Numbers</td>
+		<td>"..." allows you to insert a near-infinite amount of variables. Each open+closed curly brackets will be replaced by the corresponding item</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The formatted string</td>
+		<td style="text-align:center;">String</td>
+		<td>The formatted string</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">fav_fruit = "mango"</code></li><!--
@@ -2814,8 +2921,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L8"><code class="language-lua">plural_noun = "fishes"</code></li><!--
 --><li class="L9"><code class="language-lua">adj = "drunk"</code></li><!--
 --><li class="L10"><code class="language-lua">madlib = madlib:format(verb_endIn_ing, plural_noun, adj)</code></li><!--
---><li class="L11"><code class="language-lua">-- madlib == "'There are too many flip flopping fishes on this drunk plane!', he screamed."</code></li><!--
---><li class="L12"><code class="language-lua"></code></li></ol></pre>
+--><li class="L11"><code class="language-lua">-- madlib == "'There are too many flip flopping fishes on this drunk plane!', he screamed."</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2831,67 +2941,54 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.replace"> string.replace(input, before, after, limit) </h3>
 <pre><code>Replaces any occurances of a substring within a string</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string to replace text in</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string to replace text in</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>before</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string to look for within &#60;input&#62;
-	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
-</div>
-
-<h3</td>
+		<td>before</td>
+		<td style="text-align:center;">String</td>
+		<td>The string to look for within &#60;input&#62;</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>after</td>
-	 <td style="text-align:center;">String or nil</td>
-	 <td>Replaces any occurances of <before> with this string; if set to nil, then it will simply remove the found text. </td>
+		<td>after</td>
+		<td style="text-align:center;">String or nil</td>
+		<td>Replaces any occurances of <before> with this string; if set to nil, then it will simply remove the found text. </td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>limit</td>
-	 <td style="text-align:center;">Number or Nil</td>
-	 <td>The max number of occurances to replace in &#60;input&#62;
-	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
-</div>
-
-<h3</td>
+		<td>limit</td>
+		<td style="text-align:center;">Number or Nil</td>
+		<td>The max number of occurances to replace in &#60;input&#62;</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>The new string with replacements made</td>
+		<td style="text-align:center;">String</td>
+		<td>The new string with replacements made</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">tongue_twister = "peter piper picked a peck of pickled peppers"</code></li><!--
@@ -2900,8 +2997,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L3"><code class="language-lua"></code></li><!--
 --><li class="L4"><code class="language-lua">incorrect = "Young man, your going to keep your room clean, or else you're grounded!"</code></li><!--
 --><li class="L5"><code class="language-lua">correct = incorrect:replace("your", "you're", 1)</code></li><!--
---><li class="L6"><code class="language-lua">-- correct == "Young man, you're going to keep your room clean, or else you're grounded!"</code></li><!--
---><li class="L7"><code class="language-lua"></code></li></ol></pre>
+--><li class="L6"><code class="language-lua">-- correct == "Young man, you're going to keep your room clean, or else you're grounded!"</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2916,52 +3016,49 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.split"> string.split(input, delim, autoNum) </h3>
 <pre><code>Splits a string into a table</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The item you want converted into a table</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The item you want converted into a table</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>delim</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string that you want to divide the input by (Note: this gets excluded from the resulting table); If set to nil or an empty string is used, it will split by every character</td>
+		<td>delim</td>
+		<td style="text-align:center;">String</td>
+		<td>The string that you want to divide the input by (Note: this gets excluded from the resulting table); If set to nil or an empty string is used, it will split by every character</td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>autoNum</td>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>'true' if you want the function to turn strings of numbers to the number type</td>
+		<td>autoNum</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>'true' if you want the function to turn strings of numbers to the number type</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Table</td>
-	 <td>A table of strings (and possibly numbers) </td>
+		<td style="text-align:center;">Table</td>
+		<td>A table of strings (and possibly numbers) </td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">drinks = 'tea, coffee, water, beer'</code></li><!--
@@ -2973,8 +3070,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L6"><code class="language-lua">-- grocery_table == {5, "apples", 2, "oranges", 8, "bananas", 1, "mango"}</code></li><!--
 --><li class="L7"><code class="language-lua">hello = "Hello"</code></li><!--
 --><li class="L8"><code class="language-lua">helloTable = hello:split()</code></li><!--
---><li class="L9"><code class="language-lua">-- helloTable == {"H", "e", "l", "l", "o"}</code></li><!--
---><li class="L10"><code class="language-lua"></code></li></ol></pre>
+--><li class="L9"><code class="language-lua">-- helloTable == {"H", "e", "l", "l", "o"}</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -2989,45 +3089,44 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.startswith"> string.startswith(input, starts) </h3>
 <pre><code>A check to see if a string starts with a certain string</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string to check </td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string to check </td>
 	</tr>
 	<tr>
-
-	<tr>
-	 <td>starts</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The possible sub-string</td>
+		<td>starts</td>
+		<td style="text-align:center;">String</td>
+		<td>The possible sub-string</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">Boolean</td>
-	 <td>'true' if &#60;input&#62; starts with &#60;starts&#62;, otherwise 'false'</td>
+		<td style="text-align:center;">Boolean</td>
+		<td>'true' if &#60;input&#62; starts with &#60;starts&#62;, otherwise 'false'</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">diss = "You are so dumb that your dog teaches you tricks."</code></li><!--
@@ -3038,8 +3137,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L5"><code class="language-lua">  -- this is what gets logged</code></li><!--
 --><li class="L6"><code class="language-lua">else</code></li><!--
 --><li class="L7"><code class="language-lua">  log("Some other diss was made")</code></li><!--
---><li class="L8"><code class="language-lua">end</code></li><!--
---><li class="L9"><code class="language-lua"></code></li></ol></pre>
+--><li class="L8"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
@@ -3054,38 +3156,39 @@ specified format.<br>If you want it to go back to the default settings, run the 
 -->
 <h3 id="string.trim"> string.trim(input) </h3>
 <pre><code>Removes any whitespace around of a string</code></pre>
+
 <p><code>Parameters</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th>Parameter</th>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
-
 	<tr>
-	 <td>input</td>
-	 <td style="text-align:center;">String</td>
-	 <td>The string will possible whitespace at the start or end</td>
+		<td>input</td>
+		<td style="text-align:center;">String</td>
+		<td>The string will possible whitespace at the start or end</td>
 	</tr>
-
 </tbody></table>
+
 <p><code>Return values</code></p>
 <table class="table table-striped-white table-bordered">
 <thead>
 <tr>
- <th style="text-align:center;">Type</th>
- <th>Description</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
 </tr>
 </thead>
 <tbody>
 	<tr>
-	 <td style="text-align:center;">String</td>
-	 <td>A fixed version of the string without the leading/trailing whitespace</td>
+		<td style="text-align:center;">String</td>
+		<td>A fixed version of the string without the leading/trailing whitespace</td>
 	</tr>
 </tbody></table>
+
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
 --><li class="L0"><code class="language-lua">code = "    if x then y"</code></li><!--
@@ -3094,8 +3197,11 @@ specified format.<br>If you want it to go back to the default settings, run the 
 --><li class="L3"><code class="language-lua"></code></li><!--
 --><li class="L4"><code class="language-lua">title = " [    HELLO    ] "</code></li><!--
 --><li class="L5"><code class="language-lua">trimmedTitle = title:trim()</code></li><!--
---><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li><!--
---><li class="L7"><code class="language-lua"></code></li></ol></pre>
+--><li class="L6"><code class="language-lua">-- trimmedTitle == "[    HELLO    ]"</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
 
 <div class="md-section-divider"></div>
 
