@@ -78,6 +78,7 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 		</li>
 		<li class="nested">Variable Modifiers
 			<ol class="nested">
+				<li class="nested"><a href="#deepcopy">deepcopy</a></li>
 				<li class="nested"><a href="#join">join</a></li>
 				<li class="nested"><a href="#merge">merge</a></li>
 				<li class="nested"><a href="#string.format">string.format</a></li>
@@ -978,6 +979,69 @@ Enjoy! (And contact me on reddit if you have any questions/problems/suggestions)
 --><li class="L3"><code class="language-lua">if areSame then</code></li><!--
 --><li class="L4"><code class="language-lua">  log("They're the same!") -- this gets logged as order of elements does not matter</code></li><!--
 --><li class="L5"><code class="language-lua">end</code></li></ol></pre>
+<!--
+	END FUNCTION
+-->
+
+
+<hr>
+<div class="md-section-divider"></div>
+
+<div class="topImg">
+	<a href="#top"><img src="rsz_back2top.png" align="right"/></a>
+	<h6 style="float: right;" class="topText">Back to top&nbsp;</h6>
+</div>
+
+
+<!--
+	START FUNCTION
+-->
+<h3 id="deepcopy"> deepycopy(orig) </h3>
+<pre><code>Recursively copies/duplicates the given table so that it is separate and independent from the original</code></pre>
+
+<p><code>Parameters</code></p>
+<table class="table table-striped-white table-bordered">
+<thead>
+<tr>
+	<th>Parameter</th>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>orig</td>
+		<td style="text-align:center;">Table</td>
+		<td>The table you want to make a copy of</td>
+	</tr>
+</tbody></table>
+
+<p><code>Return values</code></p>
+<table class="table table-striped-white table-bordered">
+<thead>
+<tr>
+	<th style="text-align:center;">Type</th>
+	<th>Description</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td style="text-align:center;">Table</td>
+		<td>An independently copied table</td>
+	</tr>
+</tbody></table>
+
+<p><code>Example(s)</code></p><div class="md-section-divider"></div>
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
+--><li class="L0"><code class="language-lua">origTable = {1, "dog", {false, "cat"}}</code></li><!--
+--><li class="L1"><code class="language-lua">fakeCopy = origTable</code></li><!--
+--><li class="L2"><code class="language-lua">dupdCopy = deepcopy(origTable)</code></li><!--
+--><li class="L3"><code class="language-lua"></code></li><!--
+--><li class="L4"><code class="language-lua">-- to show the difference between the 'fakeCopy' and the 'dupdCopy'...</code></li><!--
+--><li class="L5"><code class="language-lua">origTable[3][1] = true -- changes the first item of the third item (i.e. false)</code></li><!--
+--><li class="L6"><code class="language-lua">print(origTable) -- logs: {1, "dog", {true, "cat"}}</code></li><!--
+--><li class="L7"><code class="language-lua">print(fakeCopy)  -- logs: {1, "dog", {true, "cat"}} -- setting one variable equal to another simply makes a link</code></li><!--
+--><li class="L8"><code class="language-lua">print(dupdCopy)  -- logs: {1, "dog", {false, "cat"}} -- whereas a deep copy remains separate/independent</code></li></ol></pre>
 <!--
 	END FUNCTION
 -->
