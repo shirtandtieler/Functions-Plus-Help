@@ -2772,7 +2772,7 @@ specified format.<br>If you want it to go back to the default settings, run the 
 	<tr>
 		<td>input</td>
 		<td style="text-align:center;">String</td>
-		<td>The thing to be turned into code (set to a variable)</td>
+		<td>The thing to be turned into code</td>
 	</tr>
 </tbody></table>
 
@@ -2786,20 +2786,24 @@ specified format.<br>If you want it to go back to the default settings, run the 
 </thead>
 <tbody>
 	<tr>
-		<td style="text-align:center;">None</td>
-		<td>None</td>
+		<td style="text-align:center;">Varies based on input</td>
+		<td>The evaluated string</td>
 	</tr>
 </tbody></table>
 
 <p><code>Example(s)</code></p><div class="md-section-divider"></div>
 <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><!--
---><li class="L0"><code class="language-lua">toEval = "beersDrank = 5"</code></li><!--
---><li class="L1"><code class="language-lua">eval(toEval)</code></li><!--
---><li class="L2"><code class="language-lua">log(beersDrank) -- logs: 5</code></li><!--
+--><li class="L0"><code class="language-lua">math_string = "8*3-10"</code></li><!--
+--><li class="L1"><code class="language-lua">answer = eval(math_string)</code></li><!--
+--><li class="L2"><code class="language-lua">log(answer) -- logs: 14</code></li><!--
 --><li class="L3"><code class="language-lua"></code></li><!--
---><li class="L4"><code class="language-lua">toEval:replace("5", "6", 1)</code></li><!--
---><li class="L5"><code class="language-lua">eval(toEval)</code></li><!--
---><li class="L6"><code class="language-lua">log(beersDrank) -- now logs: 6</ol></pre>
+--><li class="L4"><code class="language-lua">toEval = "beersDrank = 5" -- you can set a value to a variable within the string </code></li><!--
+--><li class="L5"><code class="language-lua">consumed = eval(toEval) -- now both consumed and beersDrank are equal to 5</code></li><!--
+--><li class="L6"><code class="language-lua">log(consumed .. " / " .. beersDrank) -- logs: 5 / 5</code></li><!--
+--><li class="L7"><code class="language-lua"></code></li><!--
+--><li class="L8"><code class="language-lua">toEval:replace("5", "6", 1) -- replacing stuff in the original string will effect the outcome</code></li><!--
+--><li class="L9"><code class="language-lua">eval(toEval)</code></li><!--
+--><li class="L10"><code class="language-lua">log(beersDrank) -- now logs: 6</ol></pre>
 <!--
 	END FUNCTION
 -->
